@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BB8C82CF-2ECF-59EE-19BB-23D64C579ED5" name="Termen">
+<createdBy>Iustina</createdBy>
+<createdTime>2023-01-07 18:53:48 UTC</createdTime>
+<generatorID>BB69E26A-8E60-9D3C-9BE9-8890972D216C</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Data_expirarii" id="A189DCA9-42A1-82C9-ADCA-F952CA7DF0C6">
+<createdBy>Iustina</createdBy>
+<createdTime>2023-01-07 18:53:48 UTC</createdTime>
+<generatorID>7D7B6328-644A-88B0-B382-5EAA815C9054</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Etichete_Etichete_ID" id="7E2EF3A2-B4DE-00BE-5B8F-4164B022F418">
+<createdBy>Iustina</createdBy>
+<createdTime>2023-01-07 18:53:48 UTC</createdTime>
+<generatorID>19C2655E-4D9A-983F-062C-BE2BB3217CE9</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="27BBE8B2-4607-3AA6-9958-CB5E9774D4C0" referredColumn="E75C4139-6B66-F94D-198F-FEBA0A527E61"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B5829194-46A3-B3A4-6D88-6B7773944120" name="Termen__IDX">
+<createdBy>Iustina</createdBy>
+<createdTime>2023-01-07 18:53:48 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>860BC271-35BE-169E-08E9-16198076FA4A</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="7E2EF3A2-B4DE-00BE-5B8F-4164B022F418"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2EC9AD24-52E5-7EB0-D72D-3BD8FBA80B2F" name="Termen_Etichete_FK">
+<createdBy>Iustina</createdBy>
+<createdTime>2023-01-07 18:53:48 UTC</createdTime>
+<generatorID>860BC271-35BE-169E-08E9-16198076FA4A</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E2EF3A2-B4DE-00BE-5B8F-4164B022F418"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

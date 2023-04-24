@@ -1,0 +1,34 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Reteta" directorySegmentName="seg_0" id="AF39F3C3-84BD-51ED-9D88-24BD438DD323">
+<createdBy>Iustina</createdBy>
+<createdTime>2022-12-08 14:39:07 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+<engineerTo>
+<item key="BE5E7D0C-1EED-D46F-3544-1765E8AC8EFD" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>B64EBB58-D6AE-B9E1-4569-BC52CD7CDA7E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>112F860B-1DED-6F07-1613-915E9C34F574</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="Procent" id="0EE161DC-F798-A196-20EE-4F5E49256055">
+<createdBy>Iustina</createdBy>
+<createdTime>2022-12-08 14:39:19 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+<engineerTo>
+<item key="BE5E7D0C-1EED-D46F-3544-1765E8AC8EFD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

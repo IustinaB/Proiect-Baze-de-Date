@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CEBBDFBA-C329-0747-5CA3-2215C76C3409" name="Ambalaj">
+<createdBy>Iustina</createdBy>
+<createdTime>2023-01-07 18:53:48 UTC</createdTime>
+<generatorID>4606C5DB-CC88-528F-9020-57CA8D627223</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_ambalaj" id="152EC0BB-1396-7A9F-EB12-298D9508B876">
+<createdBy>Iustina</createdBy>
+<createdTime>2023-01-07 18:53:48 UTC</createdTime>
+<generatorID>5C0EA555-091D-B857-39DF-6127E1B9DA8A</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementStartWith>100</autoIncrementStartWith>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Marime" id="6C1129E6-1A10-6D32-F76F-5EA1634084A6">
+<createdBy>Iustina</createdBy>
+<createdTime>2023-01-07 18:53:48 UTC</createdTime>
+<generatorID>A0A02A5A-30F7-9162-DFCD-6D7ECDE53EAE</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cantitate_am" id="EC163265-DEC5-421B-5EED-426E09BF2029">
+<createdBy>Iustina</createdBy>
+<createdTime>2023-01-07 18:53:48 UTC</createdTime>
+<generatorID>C78B2546-88C2-48E8-AFA9-CD7071A53DB3</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<constraintName>Ambalaj_Cantitate_am_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="Cantitate_am&gt;=0"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tipuri_Ambalaje_ID_tip" id="C12E4BD1-ABBB-A94F-901F-0F27F8A9425E">
+<createdBy>Iustina</createdBy>
+<createdTime>2023-01-07 18:53:48 UTC</createdTime>
+<generatorID>41A8CF23-AEEA-D6B2-A778-7CF6F1A2DAF3</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="545007DF-721B-765C-A02B-E47EB41CD7FE" referredColumn="0508CDC3-BDCE-EFBD-5F21-A9925647AAAB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AA922A1C-6B91-FB33-D170-F201B003139B" name="Ambalaj_PK">
+<createdBy>Iustina</createdBy>
+<createdTime>2023-01-07 18:53:48 UTC</createdTime>
+<generatorID>BE0BE053-A783-E3DB-FFE8-2354B2DD1E48</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="152EC0BB-1396-7A9F-EB12-298D9508B876"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3262DDD0-A4A5-DE55-BCC2-9EB8FF3E4CFD" name="Ambalaj_Tipuri_Ambalaje_FK">
+<createdBy>Iustina</createdBy>
+<createdTime>2023-01-07 18:53:48 UTC</createdTime>
+<generatorID>6760E957-FDE5-5C69-4C6C-2A86A5247A7E</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C12E4BD1-ABBB-A94F-901F-0F27F8A9425E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

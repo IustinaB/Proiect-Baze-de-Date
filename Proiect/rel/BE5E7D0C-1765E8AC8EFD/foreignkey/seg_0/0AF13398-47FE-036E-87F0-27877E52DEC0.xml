@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0AF13398-47FE-036E-87F0-27877E52DEC0" containerWithKeyObject="82AFBF92-102C-14D6-E6D4-5E3FA5C81E1E" localFKIndex="13A403D6-EAE9-B8C5-683E-5A9AF8661912" name="Reteta_Produs_finit_FK">
+<createdBy>Iustina</createdBy>
+<createdTime>2023-01-07 18:53:48 UTC</createdTime>
+<generatorID>AF39F3C3-84BD-51ED-9D88-24BD438DD323</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<referredTableLongName>Produs_finit</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>FC40A415-E2DB-396F-417E-46C79E65C70E</referredTableID>
+<keyObject>70944628-F7E9-C43C-6116-EE2765789997</keyObject>
+<referredKeyID>70944628-F7E9-C43C-6116-EE2765789997</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_produs</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

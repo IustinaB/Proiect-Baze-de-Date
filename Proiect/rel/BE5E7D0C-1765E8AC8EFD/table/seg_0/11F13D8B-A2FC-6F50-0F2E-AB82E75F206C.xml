@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="11F13D8B-A2FC-6F50-0F2E-AB82E75F206C" name="Materia_prima">
+<createdBy>Iustina</createdBy>
+<createdTime>2023-01-07 18:53:48 UTC</createdTime>
+<generatorID>112F860B-1DED-6F07-1613-915E9C34F574</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_mp" id="91A5C608-E96C-0B09-1712-38DB32758D88">
+<createdBy>Iustina</createdBy>
+<createdTime>2023-01-07 18:53:48 UTC</createdTime>
+<generatorID>B73E4098-238B-315A-CBB1-3C2255BBA868</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementStartWith>300</autoIncrementStartWith>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nume_Produs" id="5429B72C-0679-C0AA-A44B-C59A2EC7EE4F">
+<createdBy>Iustina</createdBy>
+<createdTime>2023-01-07 18:53:48 UTC</createdTime>
+<generatorID>BAD6179B-BA61-F70E-D225-85F48F7FE287</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<constraintName>MateriaPrima_NumeProdus_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(Nume_Produs, &apos;^[A-Za-z]+((\s)?([a-z])+)*$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IsApicol" id="B8F5DC79-D96A-A862-B4FD-BDE7D67F8A35">
+<createdBy>Iustina</createdBy>
+<createdTime>2023-01-07 18:53:48 UTC</createdTime>
+<generatorID>FE01F292-222A-5F6D-FE69-D9C3DA2157DD</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Stoc" id="E5D1DF1A-DD2D-0E43-6A80-7ED718C473BE">
+<createdBy>Iustina</createdBy>
+<createdTime>2023-01-07 18:53:48 UTC</createdTime>
+<generatorID>CBA5AC05-29C8-7D32-8BDD-771E0C2C5ABD</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<constraintName>Materia_prima_Stoc_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="Stoc&gt;=0"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7A3E5FF3-FCC6-720D-29B7-7A6EC9BBDB67" name="Materia_prima_PK">
+<createdBy>Iustina</createdBy>
+<createdTime>2023-01-07 18:53:48 UTC</createdTime>
+<generatorID>79E8BA9A-81D8-53D2-28B0-493CA69C6244</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="91A5C608-E96C-0B09-1712-38DB32758D88"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="81095072-6C29-FE9B-D59E-BE62BE958833" name="Materia_prima_Nume_Produs_UN">
+<createdBy>Iustina</createdBy>
+<createdTime>2023-01-07 18:53:48 UTC</createdTime>
+<generatorID>7F076A4B-DEF5-62A5-5789-8610385A333F</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5429B72C-0679-C0AA-A44B-C59A2EC7EE4F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

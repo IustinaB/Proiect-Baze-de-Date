@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="06931B4A-2227-7873-C513-79E6C647070D" containerWithKeyObject="82AFBF92-102C-14D6-E6D4-5E3FA5C81E1E" localFKIndex="6E85BB3D-C25A-6D81-96BB-B35156083BB4" name="Reteta_Materia_prima_FK">
+<createdBy>Iustina</createdBy>
+<createdTime>2023-01-07 18:53:48 UTC</createdTime>
+<generatorID>AF39F3C3-84BD-51ED-9D88-24BD438DD323</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<referredTableLongName>Materia_prima</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>11F13D8B-A2FC-6F50-0F2E-AB82E75F206C</referredTableID>
+<keyObject>7A3E5FF3-FCC6-720D-29B7-7A6EC9BBDB67</keyObject>
+<referredKeyID>7A3E5FF3-FCC6-720D-29B7-7A6EC9BBDB67</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_mp</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

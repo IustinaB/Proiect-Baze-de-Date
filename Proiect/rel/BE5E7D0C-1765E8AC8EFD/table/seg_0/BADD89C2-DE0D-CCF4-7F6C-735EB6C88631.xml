@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BADD89C2-DE0D-CCF4-7F6C-735EB6C88631" name="Etichete">
+<createdBy>Iustina</createdBy>
+<createdTime>2023-01-07 18:53:48 UTC</createdTime>
+<generatorID>4F348E33-03B8-8635-69DA-144CBFA62C63</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Etichete_ID" id="E75C4139-6B66-F94D-198F-FEBA0A527E61">
+<createdBy>Iustina</createdBy>
+<createdTime>2023-01-07 18:53:48 UTC</createdTime>
+<generatorID>1E35AAEC-6BA1-C05F-4140-8E441040AD77</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Data_Fabricare" id="2B4F2B5A-3481-B0DD-DF93-039AF476D4D9">
+<createdBy>Iustina</createdBy>
+<createdTime>2023-01-07 18:53:48 UTC</createdTime>
+<generatorID>9764039C-72F8-6CE5-5E4D-6859F555E306</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Bucati" id="00CD0C84-9B61-071F-8D5F-EDD6A063A81C">
+<createdBy>Iustina</createdBy>
+<createdTime>2023-01-07 18:53:48 UTC</createdTime>
+<generatorID>981D7D55-C906-93B2-0356-52DD984F73A4</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<constraintName>Etichete_Bucati_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="Bucati&gt;0"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Ambalaj_ID_ambalaj" id="E4E34AFC-B96A-C3BC-8266-DEFFE8C5BE25">
+<createdBy>Iustina</createdBy>
+<createdTime>2023-01-07 18:53:48 UTC</createdTime>
+<generatorID>8F98BEC5-C9EF-4DBC-BA29-421874D67D06</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6AD2C70F-5DAF-42D7-9466-20853F354FFD" referredColumn="152EC0BB-1396-7A9F-EB12-298D9508B876"/>
+</associations>
+</Column>
+<Column name="Produs_finit_ID_produs" id="DCB6A89D-8B9F-D066-399E-91F57DCF5146">
+<createdBy>Iustina</createdBy>
+<createdTime>2023-01-07 18:53:48 UTC</createdTime>
+<generatorID>E7CFE5CC-4EC4-B5CC-D94F-21D1B35577C3</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5F70E362-88B6-BEE8-9947-7369A68E3877" referredColumn="86E65420-70B3-41D5-68A8-B15C75BA7166"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FB2F4B8F-0C34-7A5E-B72A-60E11161D2BB" name="Etichete_PK">
+<createdBy>Iustina</createdBy>
+<createdTime>2023-01-07 18:53:48 UTC</createdTime>
+<generatorID>6341C38F-E2E8-7663-6FA4-41309955689F</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E75C4139-6B66-F94D-198F-FEBA0A527E61"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0E6C20F9-7D84-D6AC-8FE0-971D148878AD" name="Etichete_Produs_finit_FK">
+<createdBy>Iustina</createdBy>
+<createdTime>2023-01-07 18:53:48 UTC</createdTime>
+<generatorID>43907986-D629-9741-D887-2680D7FE6AD9</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DCB6A89D-8B9F-D066-399E-91F57DCF5146"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D46CBF0B-BAF5-F991-BCA9-D4EEF1215413" name="Etichete_Ambalaj_FK">
+<createdBy>Iustina</createdBy>
+<createdTime>2023-01-07 18:53:48 UTC</createdTime>
+<generatorID>1E46ABCA-4BFB-1981-0501-1C0804A7817E</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E4E34AFC-B96A-C3BC-8266-DEFFE8C5BE25"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

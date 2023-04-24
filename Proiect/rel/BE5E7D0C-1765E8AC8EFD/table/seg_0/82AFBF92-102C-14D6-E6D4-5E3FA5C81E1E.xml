@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="82AFBF92-102C-14D6-E6D4-5E3FA5C81E1E" name="Reteta">
+<createdBy>Iustina</createdBy>
+<createdTime>2023-01-07 18:53:48 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Produs_finit_ID_produs" id="6C92B78E-905D-90D9-36FE-2ED0A842596D">
+<createdBy>Iustina</createdBy>
+<createdTime>2023-01-07 18:53:48 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0AF13398-47FE-036E-87F0-27877E52DEC0" referredColumn="86E65420-70B3-41D5-68A8-B15C75BA7166"/>
+</associations>
+</Column>
+<Column name="Materia_prima_ID_mp" id="259FB1C2-2517-5D88-A012-5817DE3F5B46">
+<createdBy>Iustina</createdBy>
+<createdTime>2023-01-07 18:53:48 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="06931B4A-2227-7873-C513-79E6C647070D" referredColumn="91A5C608-E96C-0B09-1712-38DB32758D88"/>
+</associations>
+</Column>
+<Column name="Procent" id="39D429B5-2DB0-0290-987E-D0622E7AA9CA">
+<createdBy>Iustina</createdBy>
+<createdTime>2023-01-07 18:53:48 UTC</createdTime>
+<generatorID>0EE161DC-F798-A196-20EE-4F5E49256055</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="44A1B2B8-7C4E-5B55-F570-E6B87AB22088" name="Reteta_PK">
+<createdBy>Iustina</createdBy>
+<createdTime>2023-01-07 18:53:48 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6C92B78E-905D-90D9-36FE-2ED0A842596D"/>
+<colUsage columnID="259FB1C2-2517-5D88-A012-5817DE3F5B46"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="13A403D6-EAE9-B8C5-683E-5A9AF8661912" name="Reteta_Produs_finit_FK">
+<createdBy>Iustina</createdBy>
+<createdTime>2023-01-07 18:53:48 UTC</createdTime>
+<generatorID>AF39F3C3-84BD-51ED-9D88-24BD438DD323</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6C92B78E-905D-90D9-36FE-2ED0A842596D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6E85BB3D-C25A-6D81-96BB-B35156083BB4" name="Reteta_Materia_prima_FK">
+<createdBy>Iustina</createdBy>
+<createdTime>2023-01-07 18:53:48 UTC</createdTime>
+<generatorID>AF39F3C3-84BD-51ED-9D88-24BD438DD323</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="259FB1C2-2517-5D88-A012-5817DE3F5B46"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

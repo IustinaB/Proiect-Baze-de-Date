@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7BBBE9C3-3B2B-5ECD-C6A4-2310CC6F7A92" name="Tipuri_Ambalaje">
+<createdBy>Iustina</createdBy>
+<createdTime>2022-11-10 21:51:39 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+<engineerTo>
+<item key="BE5E7D0C-1EED-D46F-3544-1765E8AC8EFD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_tip" id="8EB02CF5-2A5A-92C5-B800-C8533101A142">
+<createdBy>Iustina</createdBy>
+<createdTime>2022-11-10 21:51:50 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+<engineerTo>
+<item key="BE5E7D0C-1EED-D46F-3544-1765E8AC8EFD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Denumire" id="B67E2821-E03C-1ABA-1636-EE1384AA44C7">
+<createdBy>Iustina</createdBy>
+<createdTime>2022-11-10 21:52:00 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+<engineerTo>
+<item key="BE5E7D0C-1EED-D46F-3544-1765E8AC8EFD" value="true"/>
+</engineerTo>
+<constraintName>Tipuri_Ambalaje_Denumire_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(Denumire, &apos;^[A-Za-z]+((\s)?([a-z])+)*$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5EC567FF-2DF3-9BF2-8132-EEE623F98C43" name="Tipuri Ambalaje PK">
+<createdBy>Iustina</createdBy>
+<createdTime>2022-11-11 13:15:21 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+<engineerTo>
+<item key="BE5E7D0C-1EED-D46F-3544-1765E8AC8EFD" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8EB02CF5-2A5A-92C5-B800-C8533101A142</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="242A4CC7-DEF6-719C-2C1C-287E14D0DB1E" name="TipuriAmbalaje_Denumire_uk">
+<createdBy>Iustina</createdBy>
+<createdTime>2022-11-24 20:09:50 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+<engineerTo>
+<item key="BE5E7D0C-1EED-D46F-3544-1765E8AC8EFD" value="true"/>
+</engineerTo>
+<newElementsIDs>B67E2821-E03C-1ABA-1636-EE1384AA44C7</newElementsIDs>
+<usedAttributes>
+<attributeRef>B67E2821-E03C-1ABA-1636-EE1384AA44C7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
